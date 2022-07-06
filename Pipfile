@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+m3u8 = "*"
+ffmpeg-python = "*"
+bs4 = "*"
+selenium = "*"
+chromedriver-binary = "*"
+tqdm = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
