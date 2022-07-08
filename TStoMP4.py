@@ -7,4 +7,4 @@ def ts_to_mp4(ts_list,filename):
         lines = [f"file '{line}'" for line in videos] 
         fp.write("\n".join(lines))
 
-    ffmpeg.input("ts_file_list.txt", f="concat", safe=0).output(filename+".mp4", c="copy").run()
+    ffmpeg.input("ts_file_list.txt", f="concat", safe=0).output("download_files/"+filename+".mp4", c="copy").run()
