@@ -7,7 +7,6 @@ from TStoMP4 import ts_to_mp4
 
 #コマンドラインから受け取る
 args = sys.argv
-print(args[0])
 url = args[2]
 filename = args[1]
 
@@ -43,4 +42,4 @@ for index,segment in enumerate(playlist.segments):
 
 print("[ CONVERTING ]")
 ts_to_mp4(ts_list,filename)
-print("=====SUCCESS DOWNLOAD=====")
+print(f"=====SUCCESS DOWNLOAD [{filename}.mp4]=====")
